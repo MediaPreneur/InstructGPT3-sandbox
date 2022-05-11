@@ -48,11 +48,11 @@ class web_app():
         openai.api_key = key
     
     def token_box():
-        tokens = st.sidebar.number_input(
-        "Number of Tokens:", min_value=5, max_value=2000, value=50)
-        return tokens
+        return st.sidebar.number_input(
+            "Number of Tokens:", min_value=5, max_value=2000, value=50
+        )
     
     def temp_box():
-        temp =st.sidebar.number_input(
-        "Temperature:", min_value=0.0, max_value=1.0, value=0.5)
-        return temp
+        return st.sidebar.number_input(
+            "Temperature:", min_value=0.0, max_value=1.0, value=0.5
+        )
